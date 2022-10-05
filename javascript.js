@@ -1,7 +1,7 @@
 // Asking the browser if it supports service worker
 if ('serviceWorker' in navigator) {
   console.log("Serviceworker is available")
-  navigator.serviceWorker.register("/serviceworker.js");
+  navigator.serviceWorker.register("/json_student/serviceworker.js");
 } else {
   console.log("Serviceworker is NOT available")
 }

@@ -15,5 +15,5 @@
             "type": "image/png"
         }
     ],
-    "start_url": "index.html"
+    "start_url": "/json_student/index.html"
 }

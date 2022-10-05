@@ -1,4 +1,4 @@
-const cacheName = "cache-students";
+/* const cacheName = "cache-students";
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
@@ -12,4 +12,25 @@ self.addEventListener("fetch", function (event) {
       caches.open(cacheName).then((cache) => cache.match(event.request))
     )
   );
-});
+}); */
+
+const addResourcesToCache = async (resources) => {
+    const cache = await caches.open("v1");
+    await cache.addAll(resources);
+  };
+  
+  self.addEventListener("install", (event) => {
+    event.waitUntil(
+      addResourcesToCache([
+        "/",
+        "/index.html",
+        "/mystyle.css",
+        "/javascript.js",
+        "/members.json",
+        "/morten.png",
+        "/nina.png",
+        "/olivia.png",
+      ])
+    );
+  });
+  

@@ -2,7 +2,7 @@ const cacheName = "cache-students";
 self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
-      return cache.addAll(["/", "index.html", "mystyle.css", "javascript.js", "members.json", "morten.png", "nina.png", "olivia.png"]);
+      return cache.addAll(["/json-student/", "index.html", "mystyle.css", "javascript.js", "members.json", "morten.png", "nina.png", "olivia.png"]);
     })
   );
 });

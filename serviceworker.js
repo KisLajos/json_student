@@ -22,14 +22,14 @@ const addResourcesToCache = async (resources) => {
   self.addEventListener("install", (event) => {
     event.waitUntil(
       addResourcesToCache([
-        "/",
-        "index.html",
-        "mystyle.css",
-        "javascript.js",
-        "members.json",
-        "morten.png",
-        "nina.png",
-        "olivia.png",
+        "/json_student/",
+        "/json_student/index.html",
+        "/json_student/mystyle.css",
+        "/json_student/javascript.js",
+        "/json_student/members.json",
+        "/json_student/morten.png",
+        "/json_student/nina.png",
+        "/json_student/olivia.png",
       ])
     );
   });

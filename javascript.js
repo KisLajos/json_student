@@ -1,11 +1,3 @@
-// Asking the browser if it supports service worker
-if ('serviceWorker' in navigator) {
-  console.log("Serviceworker is available")
-  navigator.serviceWorker.register("/json_student/serviceworker.js");
-} else {
-  console.log("Serviceworker is NOT available")
-}
-
 fetch("members.json")
   .then(function (data) {
     return data.json();

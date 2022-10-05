@@ -23,13 +23,13 @@ const addResourcesToCache = async (resources) => {
     event.waitUntil(
       addResourcesToCache([
         "/",
-        "/index.html",
-        "/mystyle.css",
-        "/javascript.js",
-        "/members.json",
-        "/morten.png",
-        "/nina.png",
-        "/olivia.png",
+        "index.html",
+        "mystyle.css",
+        "javascript.js",
+        "members.json",
+        "morten.png",
+        "nina.png",
+        "olivia.png",
       ])
     );
   });
